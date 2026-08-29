@@ -1,459 +1,258 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Valorianbots - Sistema de Gestão para PMEs
+-->
+<html>
+	<head>
+		<title>Valorianbots - Gestão inteligente para negócios que crescem</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Sistema de gestão completo para pequenos e médios negócios. Controle de estoque, vendas, faturas e muito mais." />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-    <!-- SEO -->
-    <title>Valorian Automações – Bots Inteligentes para Sua Empresa</title>
-    <meta name="description" content="Automatize atendimento, cobrança e RH com bots inteligentes. Piloto gratuito de 15 dias. Sem cartão de crédito.">
-    <meta name="keywords" content="bot whatsapp empresa, automação empresarial, cobrança automática, atendimento inteligente, gestão RH, bot cobrança PIX">
-    <meta name="author" content="Valorian Soluções">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://valorianbots.com.br">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Valorian Automações – Bots para Empresas">
-    <meta property="og:description" content="Atendimento 24h, cobrança automática e gestão de RH. Piloto grátis de 15 dias.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://valorianbots.com.br">
-    <meta property="og:locale" content="pt_BR">
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Valorianbots</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Valorian Automações – Bots para Empresas">
-    <meta name="twitter:description" content="Automatize atendimento, cobrança e RH. Piloto grátis de 15 dias.">
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#plans">Planos</a></li>
+								<li><a href="#features">Funcionalidades</a></li>
+								<li><a href="#demo">Demonstração</a></li>
+								<li><a href="#footer">Contato</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h2>Valorianbots</h2>
+							<p>Gestão inteligente para negócios que crescem</p>
+							<p>Sistema completo de ERP para pequenas e médias empresas no Brasil</p>
+							<p><a href="#demo" class="button primary">Agende sua demonstração gratuita</a></p>
+						</div>
+					</section>
 
-    <style>
-        * { box-sizing: border-box; }
-        body {
-            background-color: #f8f9fa;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-        }
-        header {
-            background: linear-gradient(135deg, #002244, #003366);
-            color: white;
-            padding: 4rem 1rem 3rem;
-            text-align: center;
-        }
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
-        .section    { padding: 4rem 0; }
-        .section-alt { background: #f0f4ff; }
+				<!-- Wrapper -->
+					<section id="wrapper">
 
-        .card {
-            background: white;
-            border-radius: .75rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,.08);
-            padding: 1.5rem;
-            transition: transform .3s;
-        }
-        .card:hover { transform: translateY(-4px); }
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic01.jpg" alt="Gestão de estoque" /></a>
+									<div class="content">
+										<h2 class="major">Controle total do seu negócio</h2>
+										<p>O Valorianbots centraliza estoque, vendas, faturas, clientes e fornecedores em um único lugar. Sem mais planilhas, sem mais perdas. Seu negócio organizado e pronto para crescer.</p>
+										<a href="#features" class="special">Conheça as funcionalidades</a>
+									</div>
+								</div>
+							</section>
 
-        .plano-card {
-            border-radius: .75rem;
-            padding: 1.5rem;
-            text-align: center;
-            transition: transform .3s, box-shadow .3s;
-            background: white;
-            border: 2px solid transparent;
-            position: relative;
-        }
-        .plano-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.12); }
-        .plano-card.destaque { border-color: #0055a5; box-shadow: 0 4px 20px rgba(0,85,165,.2); }
-        .badge-em-breve {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: #ff9800;
-            color: white;
-            font-size: 0.7rem;
-            font-weight: bold;
-            padding: 0.2rem 0.6rem;
-            border-radius: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic02.jpg" alt="Relatórios" /></a>
+									<div class="content">
+										<h2 class="major">Decisões com dados reais</h2>
+										<p>Relatórios de faturamento, lucro, produtos mais vendidos e inadimplência. Você toma decisões com base em dados, não em achismos. Controle financeiro completo ao seu alcance.</p>
+										<a href="#plans" class="special">Veja os planos</a>
+									</div>
+								</div>
+							</section>
 
-        details { border-bottom: 1px solid #e5e7eb; }
-        details summary {
-            cursor: pointer;
-            padding: 1rem 0;
-            font-weight: 600;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        details summary::after { content: "+"; font-size: 1.3rem; color: #003366; }
-        details[open] summary::after { content: "−"; }
-        details p { padding: 0 0 1rem; color: #555; margin: 0; }
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic03.jpg" alt="Suporte personalizado" /></a>
+									<div class="content">
+										<h2 class="major">Suporte que realmente ajuda</h2>
+										<p>Você fala com quem instalou o sistema. Atendimento personalizado via WhatsApp, com tempo de resposta rápido. Não somos um robô — somos uma parceira para o seu negócio.</p>
+										<a href="#footer" class="special">Fale conosco</a>
+									</div>
+								</div>
+							</section>
 
-        #whatsapp-float {
-            position: fixed;
-            bottom: 1.5rem;
-            right: 1.5rem;
-            background: #25D366;
-            color: white;
-            border-radius: 50%;
-            width: 56px;
-            height: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            box-shadow: 0 4px 16px rgba(0,0,0,.2);
-            text-decoration: none;
-            z-index: 999;
-            transition: transform .2s, box-shadow .2s;
-        }
-        #whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(0,0,0,.3); }
+						<!-- Four - Planos -->
+							<section id="plans" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Planos e preços</h2>
+									<p>Escolha o plano que melhor se adapta ao seu negócio. Todos incluem implantação, treinamento e suporte.</p>
+									<section class="features">
+										<article>
+											<h3 class="major">Básico</h3>
+											<p><strong>Setup:</strong> R$ 400</p>
+											<p><strong>Mensalidade:</strong> R$ 100/mês</p>
+											<p>Estoque, Vendas, Faturas, Clientes, Relatórios básicos, 1h de treinamento, Suporte por e-mail/WhatsApp (48h)</p>
+											<a href="#demo" class="special">Quero esse</a>
+										</article>
+										<article>
+											<h3 class="major" style="color: #4A1D8C;">Profissional</h3>
+											<p><strong>Setup:</strong> R$ 800</p>
+											<p><strong>Mensalidade:</strong> R$ 150/mês</p>
+											<p>Tudo do Básico + Fornecedores, Controle Financeiro, CRM, Multi-empresa (1 extra), Relatórios avançados, 2h de treinamento, Suporte WhatsApp prioritário (24h), Logo e cores personalizados</p>
+											<a href="#demo" class="special">Quero esse</a>
+										</article>
+										<article>
+											<h3 class="major">Empresarial</h3>
+											<p><strong>Setup:</strong> R$ 1.500</p>
+											<p><strong>Mensalidade:</strong> R$ 300/mês</p>
+											<p>Tudo do Profissional + Projetos, Intervenções, Contabilidade Simplificada, Comissões, Lotes, Código de Barras, E-commerce (API), Fluxo de Trabalho, 4h de treinamento, Relatórios personalizados (3), Até 3 empresas</p>
+											<a href="#demo" class="special">Quero esse</a>
+										</article>
+										<article>
+											<h3 class="major">Corporativo</h3>
+											<p><strong>Setup:</strong> A partir de R$ 3.000</p>
+											<p><strong>Mensalidade:</strong> A partir de R$ 500/mês</p>
+											<p>Todos os módulos disponíveis, customizações ilimitadas, servidor dedicado (se necessário), treinamento para equipe, suporte com SLA, multi-empresa ilimitado</p>
+											<a href="#footer" class="special">Sob consulta</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#demo" class="button">Agende sua demonstração gratuita</a></li>
+									</ul>
+								</div>
+							</section>
 
-        footer {
-            background: #002244;
-            color: #ccc;
-            text-align: center;
-            padding: 2.5rem 1rem;
-            margin-top: 0;
-            font-size: .9rem;
-        }
-        footer a { color: #a8c8ff; text-decoration: none; }
+						<!-- Five - Funcionalidades -->
+							<section id="features" class="wrapper style1">
+								<div class="inner">
+									<h2 class="major">Funcionalidades</h2>
+									<p>Módulos disponíveis para ativar conforme a necessidade do seu negócio.</p>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<h3>Módulos Essenciais</h3>
+											<ul>
+												<li>Controle de Estoque em tempo real</li>
+												<li>Vendas e Pedidos</li>
+												<li>Emissão de Faturas e Notas Fiscais</li>
+												<li>Cadastro de Clientes com histórico</li>
+												<li>Cadastro de Fornecedores</li>
+												<li>Controle Financeiro (contas a pagar/receber)</li>
+												<li>CRM (gestão de relacionamento)</li>
+												<li>Relatórios Gerenciais</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-medium">
+											<h3>Módulos Adicionais</h3>
+											<ul>
+												<li>Projetos e Tarefas</li>
+												<li>Intervenções e Serviços</li>
+												<li>Contabilidade Simplificada</li>
+												<li>Controle de Comissões</li>
+												<li>Lotes e Validade de Produtos</li>
+												<li>Código de Barras</li>
+												<li>Integração com E-commerce (API)</li>
+												<li>Multi-empresa</li>
+												<li>Fluxo de Trabalho</li>
+												<li>Importação/Exportação de Dados</li>
+											</ul>
+										</div>
+									</div>
+									<p><em>Os módulos adicionais podem ser ativados sob consulta.</em></p>
+								</div>
+							</section>
 
-        @media (max-width: 768px) {
-            header { padding: 2.5rem 1rem 2rem; }
-            header h1 { font-size: 2rem !important; }
-            .grid-4 { grid-template-columns: 1fr 1fr !important; }
-            .grid-3 { grid-template-columns: 1fr !important; }
-            .planos-grid { grid-template-columns: 1fr !important; }
-            .passos-grid { grid-template-columns: 1fr !important; }
-        }
-        @media (max-width: 480px) {
-            .grid-4 { grid-template-columns: 1fr !important; }
-        }
-    </style>
-</head>
-<body>
+						<!-- Six - Demonstração -->
+							<section id="demo" class="wrapper alt style2">
+								<div class="inner">
+									<h2 class="major">Demonstração gratuita</h2>
+									<p>Agende uma demonstração de 15 minutos e veja o sistema funcionando ao vivo. Sem compromisso, sem pagar nada.</p>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Nome</label>
+												<input type="text" name="name" id="name" placeholder="Seu nome completo" />
+											</div>
+											<div class="field half">
+												<label for="email">E-mail</label>
+												<input type="email" name="email" id="email" placeholder="seu@email.com" />
+											</div>
+											<div class="field half">
+												<label for="phone">Telefone</label>
+												<input type="tel" name="phone" id="phone" placeholder="(11) 99999-9999" />
+											</div>
+											<div class="field half">
+												<label for="company">Nome da empresa</label>
+												<input type="text" name="company" id="company" placeholder="Minha Loja" />
+											</div>
+											<div class="field">
+												<label for="segment">Segmento</label>
+												<select name="segment" id="segment">
+													<option value="">Selecione...</option>
+													<option value="loja-roupas">Loja de Roupas/Calçados</option>
+													<option value="mercado">Mercado/Padaria</option>
+													<option value="oficina">Oficina Mecânica</option>
+													<option value="ecommerce">E-commerce</option>
+													<option value="servicos">Prestador de Serviços</option>
+													<option value="outros">Outros</option>
+												</select>
+											</div>
+											<div class="field">
+												<label for="message">Como podemos ajudar?</label>
+												<textarea name="message" id="message" rows="3" placeholder="Conte um pouco sobre o que você precisa..."></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Quero minha demonstração" class="primary" /></li>
+										</ul>
+									</form>
+								</div>
+							</section>
 
-<!-- HEADER -->
-<header>
-    <p style="color:#a8c8ff;font-size:.9rem;margin:0 0 .5rem;letter-spacing:1px;text-transform:uppercase">
-        Automação Empresarial
-    </p>
-    <h1 style="font-size:3rem;font-weight:800;margin:0 0 .75rem">Valorian Automações</h1>
-    <p style="font-size:1.2rem;opacity:.9;max-width:600px;margin:0 auto 2rem">
-        Bots inteligentes para atendimento, cobrança e RH —<br>
-        sem contratar mais funcionários.
-    </p>
-    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-        <a href="https://app.valorianbots.com.br/Cadastro"
-           style="background:#28a745;color:white;font-weight:700;padding:.9rem 2rem;
-                  border-radius:.5rem;text-decoration:none;font-size:1rem;transition:opacity .2s"
-           onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
-            🚀 Criar Conta Grátis
-        </a>
-        <a href="https://app.valorianbots.com.br/"
-           style="background:rgba(255,255,255,.15);color:white;font-weight:600;
-                  padding:.9rem 2rem;border-radius:.5rem;text-decoration:none;
-                  font-size:1rem;border:2px solid rgba(255,255,255,.4);transition:opacity .2s"
-           onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
-            🔑 Já tenho conta
-        </a>
-    </div>
-</header>
+					</section>
 
-<div class="container">
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Fale com a Valorianbots</h2>
+							<p>Tem dúvidas? Quer saber mais sobre os planos? Entre em contato — estamos aqui para ajudar.</p>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Valorianbots<br />
+									Brasil
+								</li>
+								<li class="icon solid fa-phone">(11) 9XXXX-XXXX</li>
+								<li class="icon solid fa-envelope"><a href="mailto:contato@valorianbots.com.br">contato@valorianbots.com.br</a></li>
+								<li class="icon brands fa-whatsapp"><a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a></li>
+								<li class="icon brands fa-instagram"><a href="#">@valorianbots</a></li>
+								<li class="icon brands fa-linkedin"><a href="#">Valorianbots</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2026 Valorianbots. Todos os direitos reservados.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
 
-<!-- BENEFÍCIOS -->
-<section class="section">
-    <h2 style="text-align:center;color:#003366;font-size:1.8rem;margin-bottom:2rem">
-        Por que empresas escolhem a Valorian?
-    </h2>
-    <div class="grid-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem">
-        <div class="card" style="text-align:center">
-            <div style="font-size:2.5rem;margin-bottom:.5rem">🤖</div>
-            <h3 style="color:#003366;margin:.3rem 0">Atendimento 24h</h3>
-            <p style="font-size:.9rem;color:#555">Respostas automáticas no WhatsApp para clientes, agendamentos e suporte.</p>
-        </div>
-        <div class="card" style="text-align:center">
-            <div style="font-size:2.5rem;margin-bottom:.5rem">💰</div>
-            <h3 style="color:#003366;margin:.3rem 0">Cobrança Automática</h3>
-            <p style="font-size:.9rem;color:#555">PIX, boleto e lembretes inteligentes. Recupere valores em atraso sem esforço.</p>
-        </div>
-        <div class="card" style="text-align:center">
-            <div style="font-size:2.5rem;margin-bottom:.5rem">👥</div>
-            <h3 style="color:#003366;margin:.3rem 0">Gestão de Equipe</h3>
-            <p style="font-size:.9rem;color:#555">Controle de colaboradores, folha e métricas de RH em tempo real.</p>
-        </div>
-        <div class="card" style="text-align:center">
-            <div style="font-size:2.5rem;margin-bottom:.5rem">🔒</div>
-            <h3 style="color:#003366;margin:.3rem 0">Seguro e Privado</h3>
-            <p style="font-size:.9rem;color:#555">Seus dados ficam 100% sob seu controle. Conformidade LGPD.</p>
-        </div>
-    </div>
-</section>
+			</div>
 
-<!-- COMO FUNCIONA -->
-<section class="section section-alt" style="margin:0 -1rem;padding:4rem 1rem">
-<div class="container" style="padding:0">
-    <h2 style="text-align:center;color:#003366;font-size:1.8rem;margin-bottom:.5rem">
-        Como funciona?
-    </h2>
-    <p style="text-align:center;color:#666;margin-bottom:2.5rem">Em 3 passos simples você já tem bots rodando na sua empresa.</p>
-    <div class="passos-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem">
-        <div style="text-align:center">
-            <div style="background:#003366;color:white;width:56px;height:56px;border-radius:50%;
-                        display:flex;align-items:center;justify-content:center;
-                        font-size:1.5rem;font-weight:800;margin:0 auto 1rem">1</div>
-            <h3 style="color:#003366;margin:.3rem 0">Crie sua Conta</h3>
-            <p style="color:#555;font-size:.95rem">
-                Cadastro rápido com e-mail + CPF. Piloto de 15 dias, sem cartão.
-            </p>
-        </div>
-        <div style="text-align:center">
-            <div style="background:#0055a5;color:white;width:56px;height:56px;border-radius:50%;
-                        display:flex;align-items:center;justify-content:center;
-                        font-size:1.5rem;font-weight:800;margin:0 auto 1rem">2</div>
-            <h3 style="color:#003366;margin:.3rem 0">Configure as Chaves</h3>
-            <p style="color:#555;font-size:.95rem">
-                Conecte Asaas e WhatsApp. O bot já começa a funcionar.
-            </p>
-        </div>
-        <div style="text-align:center">
-            <div style="background:#28a745;color:white;width:56px;height:56px;border-radius:50%;
-                        display:flex;align-items:center;justify-content:center;
-                        font-size:1.5rem;font-weight:800;margin:0 auto 1rem">3</div>
-            <h3 style="color:#003366;margin:.3rem 0">Bot em Ação</h3>
-            <p style="color:#555;font-size:.95rem">
-                Atendimento 24h e cobrança automática. Acompanhe pelo dashboard.
-            </p>
-        </div>
-    </div>
-</div>
-</section>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-<!-- PLANOS E PREÇOS -->
-<section class="section section-alt" style="margin:0 -1rem;padding:4rem 1rem" id="planos">
-<div class="container" style="padding:0">
-    <h2 style="text-align:center;color:#003366;font-size:1.8rem;margin-bottom:.5rem">Planos e Preços</h2>
-    <p style="text-align:center;color:#666;margin-bottom:2.5rem">
-        Pague proporcional ao seu uso. Quem usa mais, paga mais — justo para todos.
-    </p>
-
-    <!-- Bots Individuais (disponíveis) -->
-    <h3 style="color:#003366;margin-bottom:1.5rem">🤖 Bot Individual</h3>
-    <div class="planos-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:3rem">
-
-        <div class="plano-card" style="border-color:#28a745">
-            <div style="font-size:1.5rem">🟢</div>
-            <h4 style="color:#28a745;margin:.5rem 0">Básico</h4>
-            <div style="font-size:1.8rem;font-weight:800;color:#333">R$ 97</div>
-            <div style="color:#666;font-size:.85rem;margin-bottom:1rem">/mês</div>
-            <ul style="text-align:left;font-size:.85rem;color:#555;padding-left:1rem;margin:0 0 1.5rem">
-                <li>Cobrança: até R$ 12k/mês</li>
-                <li>Atendimento: 600/mês</li>
-                <li>RH: até 50 funcionários</li>
-            </ul>
-            <a data-plano="basico" href="https://app.valorianbots.com.br/Cadastro?plano=basico" class="btn-plano">Começar Grátis</a>
-        </div>
-
-        <div class="plano-card destaque">
-            <div style="background:#0055a5;color:white;font-size:.75rem;font-weight:700;
-                        padding:.2rem .6rem;border-radius:1rem;display:inline-block;margin-bottom:.3rem">
-                MAIS POPULAR
-            </div>
-            <div style="font-size:1.5rem">🔵</div>
-            <h4 style="color:#0055a5;margin:.5rem 0">Pro</h4>
-            <div style="font-size:1.8rem;font-weight:800;color:#333">R$ 197</div>
-            <div style="color:#666;font-size:.85rem;margin-bottom:1rem">/mês</div>
-            <ul style="text-align:left;font-size:.85rem;color:#555;padding-left:1rem;margin:0 0 1.5rem">
-                <li>Cobrança: até R$ 35k/mês</li>
-                <li>Atendimento: 2.500/mês</li>
-                <li>RH: até 150 funcionários</li>
-            </ul>
-            <a data-plano="intermediario" href="https://app.valorianbots.com.br/Cadastro?plano=intermediario" class="btn-plano">Começar Grátis</a>
-        </div>
-
-        <div class="plano-card">
-            <div style="font-size:1.5rem">🟣</div>
-            <h4 style="color:#6600aa;margin:.5rem 0">Empresarial</h4>
-            <div style="font-size:1.8rem;font-weight:800;color:#333">R$ 397</div>
-            <div style="color:#666;font-size:.85rem;margin-bottom:1rem">/mês</div>
-            <ul style="text-align:left;font-size:.85rem;color:#555;padding-left:1rem;margin:0 0 1.5rem">
-                <li>Cobrança: até R$ 80k/mês</li>
-                <li>Atendimento: 8.000/mês</li>
-                <li>RH: até 400 funcionários</li>
-            </ul>
-            <a data-plano="avancado" href="https://app.valorianbots.com.br/Cadastro?plano=avancado" class="btn-plano">Começar Grátis</a>
-        </div>
-
-        <div class="plano-card">
-            <div style="font-size:1.5rem">⚫</div>
-            <h4 style="color:#333;margin:.5rem 0">Ilimitado</h4>
-            <div style="font-size:1.8rem;font-weight:800;color:#333">R$ 797</div>
-            <div style="color:#666;font-size:.85rem;margin-bottom:.3rem">/mês</div>
-            <div style="color:#999;font-size:.72rem;margin-bottom:1rem">*limite de uso justo (soft cap)</div>
-            <ul style="text-align:left;font-size:.85rem;color:#555;padding-left:1rem;margin:0 0 1.5rem">
-                <li>Sem limite de cobrança</li>
-                <li>Atendimentos ilimitados</li>
-                <li>Funcionários ilimitados</li>
-            </ul>
-            <a data-plano="ilimitado" href="https://app.valorianbots.com.br/Cadastro?plano=ilimitado" class="btn-plano">Começar Grátis</a>
-        </div>
-    </div>
-
-    <!-- Central Completa (todos os bots) - EM BREVE -->
-    <h3 style="color:#003366;margin-bottom:1.5rem">🏢 Central Completa (todos os bots) <span style="background:#ff9800;color:white;font-size:0.7rem;padding:0.2rem 0.5rem;border-radius:20px;">🔜 Em breve</span></h3>
-    <div class="planos-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem">
-
-        <div class="plano-card">
-            <div class="badge-em-breve">🔜 Em breve</div>
-            <h4 style="color:#003366;margin:.5rem 0">Central Pequena</h4>
-            <div style="font-size:1.6rem;font-weight:800;color:#333">R$ 2.490</div>
-            <div style="color:#666;font-size:.85rem;margin-bottom:.75rem">/mês</div>
-            <p style="font-size:.82rem;color:#555;margin:0 0 1rem">Limites do plano Básico em todos os bots</p>
-            <a data-plano="central_pequena" href="#" class="btn-plano em-breve">Em breve</a>
-        </div>
-        <div class="plano-card destaque">
-            <div class="badge-em-breve">🔜 Em breve</div>
-            <h4 style="color:#0055a5;margin:.5rem 0">Central Média</h4>
-            <div style="font-size:1.6rem;font-weight:800;color:#333">R$ 3.990</div>
-            <div style="color:#666;font-size:.85rem;margin-bottom:.75rem">/mês</div>
-            <p style="font-size:.82rem;color:#555;margin:0 0 1rem">Limites do plano Intermediário</p>
-            <a data-plano="central_media" href="#" class="btn-plano em-breve">Em breve</a>
-        </div>
-        <div class="plano-card">
-            <div class="badge-em-breve">🔜 Em breve</div>
-            <h4 style="color:#6600aa;margin:.5rem 0">Central Grande</h4>
-            <div style="font-size:1.6rem;font-weight:800;color:#333">R$ 5.990</div>
-            <div style="color:#666;font-size:.85rem;margin-bottom:.75rem">/mês</div>
-            <p style="font-size:.82rem;color:#555;margin:0 0 1rem">Limites do plano Avançado</p>
-            <a data-plano="central_grande" href="#" class="btn-plano em-breve">Em breve</a>
-        </div>
-        <div class="plano-card">
-            <div class="badge-em-breve">🔜 Em breve</div>
-            <h4 style="color:#333;margin:.5rem 0">Central Ilimitada</h4>
-            <div style="font-size:1.6rem;font-weight:800;color:#333">R$ 7.490</div>
-            <div style="color:#666;font-size:.85rem;margin-bottom:.75rem">/mês</div>
-            <p style="font-size:.82rem;color:#555;margin:0 0 1rem">Todos os bots sem limite</p>
-            <a data-plano="central_ilimitada" href="#" class="btn-plano em-breve">Em breve</a>
-        </div>
-    </div>
-
-    <p style="text-align:center;color:#888;font-size:.85rem;margin-top:1.5rem">
-        ✅ Todos os planos incluem piloto gratuito de 15 dias • Sem cartão de crédito
-    </p>
-    <p style="text-align:center;color:#888;font-size:.85rem;">
-        🔜 Os planos Centrais (completos) estarão disponíveis em breve. Por enquanto, você pode contratar os Bots Individuais (Atendimento ou Cobrança) com piloto grátis.
-    </p>
-</div>
-</section>
-
-<!-- DEPOIMENTOS -->
-<section class="section">
-    <h2 style="text-align:center;color:#003366;font-size:1.8rem;margin-bottom:.5rem">
-        O que nossos clientes dizem
-    </h2>
-    <p style="text-align:center;color:#666;margin-bottom:2.5rem">
-        Empresas reais usando a Valorian no dia a dia.
-    </p>
-    <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
-        <div class="card">
-            <div style="color:#f59e0b;font-size:1.2rem;margin-bottom:.75rem">★★★★★</div>
-            <p style="color:#444;font-style:italic;margin:0 0 1rem">"Antes a gente perdia cliente por demora na resposta. Agora o bot responde na hora, qualquer hora. Receita aumentou 30% no primeiro mês."</p>
-            <div style="display:flex;align-items:center;gap:.75rem">
-                <div style="background:#003366;color:white;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700">RS</div>
-                <div><strong style="font-size:.9rem">Roberto Silva</strong><br><span style="font-size:.8rem;color:#666">Dono, Pet Shop Amigo Fiel</span></div>
-            </div>
-        </div>
-        <div class="card">
-            <div style="color:#f59e0b;font-size:1.2rem;margin-bottom:.75rem">★★★★★</div>
-            <p style="color:#444;font-style:italic;margin:0 0 1rem">"A cobrança automática recuperou R$ 18.000 em inadimplência no primeiro mês. O sistema paga ele mesmo várias vezes."</p>
-            <div style="display:flex;align-items:center;gap:.75rem">
-                <div style="background:#0055a5;color:white;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700">AC</div>
-                <div><strong style="font-size:.9rem">Ana Costa</strong><br><span style="font-size:.8rem;color:#666">Diretora Financeira, Clínica Saúde Total</span></div>
-            </div>
-        </div>
-        <div class="card">
-            <div style="color:#f59e0b;font-size:1.2rem;margin-bottom:.75rem">★★★★★</div>
-            <p style="color:#444;font-style:italic;margin:0 0 1rem">"Tinha medo de ser difícil de configurar. Em 20 minutos o bot já estava funcionando no nosso WhatsApp. Suporte excelente."</p>
-            <div style="display:flex;align-items:center;gap:.75rem">
-                <div style="background:#28a745;color:white;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700">MO</div>
-                <div><strong style="font-size:.9rem">Marcos Oliveira</strong><br><span style="font-size:.8rem;color:#666">Gerente, Academia FitLife</span></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ -->
-<section class="section section-alt" style="margin:0 -1rem;padding:4rem 1rem">
-<div class="container" style="padding:0">
-    <h2 style="text-align:center;color:#003366;font-size:1.8rem;margin-bottom:2.5rem">Perguntas Frequentes</h2>
-    <div style="max-width:800px;margin:0 auto">
-        <details><summary>Como funciona o piloto gratuito de 15 dias?</summary><p>Você cria sua conta com e-mail e CPF, sem cartão. O sistema fica totalmente disponível por 15 dias, com limites de R$ 8.000 em receita ou 800 atendimentos. Ao final, você escolhe um plano ou encerra sem custo.</p></details>
-        <details><summary>Preciso instalar algum programa?</summary><p>Não. 100% web, funciona em qualquer navegador.</p></details>
-        <details><summary>E se eu ultrapassar o limite do plano?</summary><p>Ao atingir 80% do limite, o sistema avisa. Ao atingir 100%, o módulo específico é bloqueado e você pode fazer upgrade.</p></details>
-        <details><summary>Posso contratar apenas um bot ou preciso do pacote completo?</summary><p>Pode contratar individualmente. A Central Completa (todos os bots) estará disponível em breve.</p></details>
-        <details><summary>Meus dados ficam seguros?</summary><p>Sim, cada empresa tem banco isolado. Conformidade LGPD.</p></details>
-        <details><summary>Como funciona o cancelamento?</summary><p>Sem fidelidade. Cancele a qualquer momento no sistema.</p></details>
-        <details><summary>O sistema funciona com qualquer WhatsApp?</summary><p>Requer WhatsApp Business API. Nosso suporte ajuda na configuração.</p></details>
-    </div>
-</div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="section" style="text-align:center">
-    <h2 style="color:#003366;font-size:2rem;margin-bottom:.75rem">Pronto para automatizar sua empresa?</h2>
-    <p style="color:#555;font-size:1.1rem;margin-bottom:2rem">Comece hoje. 15 dias grátis, sem cartão de crédito, sem compromisso.</p>
-    <a href="https://app.valorianbots.com.br/Cadastro" style="display:inline-block;background:#28a745;color:white;font-weight:700;font-size:1.2rem;padding:1rem 3rem;border-radius:.5rem;text-decoration:none;">🚀 Iniciar Piloto Gratuito</a>
-</section>
-
-</div><!-- container -->
-
-<!-- FOOTER -->
-<footer>
-    <p style="font-size:1rem;font-weight:600;color:white;margin:0 0 .5rem">Valorian Soluções – Automação Inteligente para Empresas</p>
-    <p style="margin:.3rem 0;color:#aaa">CNPJ: 64.907.564/0001-95 &nbsp;•&nbsp; 2026</p>
-    <p style="margin:.3rem 0">📞 <a href="https://wa.me/5511945981130">(11) 94598-1130</a> &nbsp;|&nbsp; ✉️ <a href="mailto:valorianbotsolucoes@proton.me">valorianbotsolucoes@proton.me</a></p>
-    <p style="margin:1rem 0 0;font-size:.8rem;color:#888">Conformidade LGPD &nbsp;•&nbsp; Todos os direitos reservados</p>
-</footer>
-
-<!-- WHATSAPP FLUTUANTE -->
-<a id="whatsapp-float" href="https://wa.me/5511945981130?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20ValorianBOTS." target="_blank" title="Falar com suporte no WhatsApp" aria-label="WhatsApp Suporte">💬</a>
-
-<!-- JAVASCRIPT -->
-<script>
-    var DASHBOARD_URL = "https://app.valorianbots.com.br";
-
-    var CADASTRO_PLANO = {
-        basico:        DASHBOARD_URL + "/Cadastro?plano=basico",
-        intermediario: DASHBOARD_URL + "/Cadastro?plano=intermediario",
-        avancado:      DASHBOARD_URL + "/Cadastro?plano=avancado",
-        ilimitado:     DASHBOARD_URL + "/Cadastro?plano=ilimitado",
-        central_pequena:   null,
-        central_media:     null,
-        central_grande:    null,
-        central_ilimitada: null
-    };
-
-    document.addEventListener("DOMContentLoaded", function() {
-        var botoes = document.querySelectorAll(".btn-plano");
-        for (var i = 0; i < botoes.length; i++) {
-            var btn = botoes[i];
-            var plano = btn.getAttribute("data-plano");
-            if (CADASTRO_PLANO[plano]) {
-                btn.href = CADASTRO_PLANO[plano];
-            } else {
-                btn.href = "#";
-                btn.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    alert("🔜 Este plano estará disponível em breve. Por enquanto, você pode contratar os Bots Individuais (Atendimento ou Cobrança) com piloto grátis.");
-                });
-            }
-        }
-    });
-</script>
-</body>
+	</body>
 </html>
